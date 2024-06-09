@@ -1,10 +1,8 @@
 package com.bruno.srt_consumer.exceptions;
 
 import lombok.extern.log4j.Log4j2;
-import org.apache.kafka.clients.consumer.Consumer;
 import org.springframework.kafka.listener.KafkaListenerErrorHandler;
 import org.springframework.kafka.listener.ListenerExecutionFailedException;
-import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.messaging.Message;
 import org.springframework.stereotype.Component;
 
