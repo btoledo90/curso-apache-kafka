@@ -20,9 +20,6 @@ public class PaymentServiceImpl implements PaymentService {
     @SneakyThrows
     @Override
     public void sendPayment(Payment payment) {
-        log.info("Recebi o pagamento {}", payment);
-        Thread.sleep(1000);
-
         log.info("Enviando pagamento...");
         kafkaTemplate.send("payment-topic", payment);
 
